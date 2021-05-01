@@ -1,0 +1,9 @@
+{
+  "name": "movieql",
+  "version": "1.0.0",
+  "description": "movie-app-backend",
+  "main": "index.js",
+  "repository": "https://github.com/HelloMandu/movie-app-backend",
+  "author": "Sungmin-Jo",
+  "license": "MIT"
+}
