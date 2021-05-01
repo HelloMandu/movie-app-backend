@@ -5,5 +5,17 @@
   "main": "index.js",
   "repository": "https://github.com/HelloMandu/movie-app-backend",
   "author": "Sungmin-Jo",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node index.js"
+  },
+  "dependencies": {
+    "graphql-yoga": "^1.18.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-stage-3": "^6.24.1",
+    "prettier": "^2.2.1"
+  }
 }
