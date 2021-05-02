@@ -1,15 +1,26 @@
-type Movie{
+type Movie {
     id: Int!
     name: String!
     score: Int!
 }
 
+type ytsMovie {
+    id: Int!
+    title: String!
+    rating: Float!
+    summary: String
+    language: String
+    medium_cover_imate: String
+}
+
 type Query {
     movies: [Movie]!
     movie(id: Int): Movie
+    ytsMovies(limit: Int, rating: Float): [ytsMovie]!
+    ytsMovie(id: Int!): ytsMovie
 }
 
-type Mutation{
+type Mutation {
     addMovie(name: String!, score: Int!): Movie
     deleteMovie(id: Int): Boolean
 }
